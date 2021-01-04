@@ -1,0 +1,36 @@
+<!--pages/home/home.wxml-->
+<view>
+  <navigator class="type1" url="/pages/navigatePage/navigatePage" open-type="navigate" hover-class="navigator-hover">
+    保留页面跳转
+  </navigator>
+  <view class="type2">
+    wx.navigateTo()
+  </view>
+  <view class="type3">
+    <button size="default" type="primary" bindtap="navigateClick" style="width:100%;height:auto">保留页面跳转</button>
+  </view>
+
+  <!-- <navigator class="type1" url="/pages/redirectPage/redirectPage" open-type="redirect" hover-class="other-navigator-hover">
+    关闭页面跳转
+  </navigator> -->
+  <navigator class="type1" url="/pages/redirectPage/redirectPage?title=redirect" open-type="redirect" hover-class="other-navigator-hover">
+    关闭页面跳转
+  </navigator>
+  <view class="type2">
+    wx.redirectTo()
+  </view>
+  <view class="type3">
+    <button size="default" type="primary" bindtap="redirectClick" style="width:100%;height:auto">关闭页面跳转</button>
+  </view>
+
+  <navigator class="type1" url="/pages/otherTabBar/otherTabBar" open-type="switchTab" hover-class="other-navigator-hover">
+    标签导航页面跳转
+  </navigator>
+  <view class="type2">
+    wx.switchTo()
+  </view>
+  <view class="type3">
+    <button size="default" type="primary" bindtap="tabBarClick" style="width:100%;height:auto">标签导航页面跳转</button>
+  </view>
+
+</view>

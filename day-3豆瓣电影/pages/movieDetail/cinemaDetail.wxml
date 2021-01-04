@@ -1,0 +1,19 @@
+<!--pages/movieDetail/cinemaDetail.wxml-->
+<view>
+  <view class="topTitle">
+    <view bindtap="homePage">首页</view>
+    <view> > </view>
+    <view>详情页</view>
+  </view>
+  
+  <view class="topContext">
+    <view>
+      <image src=""></image>
+    </view>
+    <view>
+      <view></view>
+    </view>
+  </view>
+</view>
+
+

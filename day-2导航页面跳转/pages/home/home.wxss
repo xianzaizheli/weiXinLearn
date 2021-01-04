@@ -1,0 +1,26 @@
+/* pages/home/home.wxss */
+
+.type1 {
+  text-align: center;
+  background-color: coral;
+  margin-top: 10rpx;
+}
+
+.type2 {
+  text-align: center;
+  background-color: burlywood;
+  margin-top: 10rpx;
+}
+
+.type3 {
+  text-align: center;
+  margin-top: 10rpx;
+}
+
+.navigator-hover{
+  color: aquamarine;
+}
+
+.other-navigator-hover{
+  color: darkcyan;
+}

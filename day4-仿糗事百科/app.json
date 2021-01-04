@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/home/home"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ffba1e",
+    "navigationBarTitleText": "高仿糗事百科",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

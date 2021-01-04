@@ -1,0 +1,86 @@
+
+.topTitle {
+  display: flex;
+  flex-direction: row;
+  background-color: olive;
+}
+
+.selectTopTitle{
+  width: 33%;
+  margin-top: 30rpx;
+  text-align: center;
+  font-size: 40rpx;
+  color: gold;
+  border-bottom: solid green 20rpx;
+}
+
+.unSelectTopTitle{
+  width: 33%;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  text-align: center;
+  font-size: 35rpx;
+  color: yellow;
+}
+
+.haibao{
+ width: 100%;
+ height: 300rpx;
+}
+
+.moviesList{
+  background-color: wheat;
+  font-size: 30rpx;
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+
+.movieMiddleTitle{
+  font-size: 80rpx;
+}
+
+.movie{
+  font-size: 30rpx;
+  font-style: normal green;
+  width: 32%;
+  /* 设置从左到右排列 */
+  float: left;
+  height: 800rpx;
+}
+
+.movieTitle{
+  font-size: 30rpx;
+  font-style: normal green;
+  text-align: center;
+}
+
+.movieShowDay{
+  font-size: 30rpx;
+  font-style: normal green;
+  text-align: center;
+}
+
+.movieScore{
+  font-size: 30rpx;
+  font-style: normal green;
+  text-align: center;
+}
+
+.movieShowInfo{
+  font-size: 30rpx;
+  font-style: normal green;
+  text-align: center;
+}
+
+.movieShowst{
+  font-size: 30rpx;
+  font-style: normal green;
+  text-align: center;
+}
+
+.movieStar{
+  font-size: 30rpx;
+  font-style: normal green;
+  text-align: center;
+}

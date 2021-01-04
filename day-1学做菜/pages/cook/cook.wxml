@@ -1,0 +1,49 @@
+<!--pages/cook/cook.wxml-->
+<!-- <text>pages/cook/cook.wxml</text> -->
+
+<view class="content">
+  <view class="img">
+    <image src="/images/haibao/haibao-3.jpg" style="width:100%"></image>
+  </view>
+
+  <view class="nav">
+    <view class="nav-item">
+      <view><image src="/images/icon/fenlei.jpg"></image></view>
+      <view>菜品分类</view>
+    </view>
+
+    <view class="nav-item">
+      <view><image src="/images/icon/meishi.jpg"></image></view>
+      <view>美食</view>
+    </view>
+
+    <view class="nav-item">
+      <view><image src="/images/icon/shangou.jpg"></image></view>
+      <view>闪购</view>
+    </view>
+
+    <view class="nav-item">
+      <view> <image src="/images/icon/shipin.jpg"></image></view>
+      <view>视频</view>
+    </view>
+
+  </view>
+
+  <!-- 分割线 -->
+  <view class="hr"></view>
+
+  <!-- 内容 -->
+  <!-- 头部 -->
+  <view class="head">
+    <view>新闻头条</view>
+    <view class="right">></view>
+  </view>
+
+  <!-- 身体 -->
+  <import src="/pages/template/cookBodyItem.wxml"></import>
+  <view>
+    <template is="cookBodyItem" data="{{array}}" ></template>
+  </view>
+
+</view>
+

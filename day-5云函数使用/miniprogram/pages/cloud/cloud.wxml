@@ -1,0 +1,5 @@
+<!--pages/cloud/cloud.wxml-->
+<button type="primary" bindtap="getCloud">调用云函数</button>
+
+<text>调用结果</text>
+<text>{{cloudInfo}}</text>

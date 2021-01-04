@@ -1,0 +1,47 @@
+<block wx:for="{{vipData}}" wx:key="un1" wx:for-item="vipDataItem">
+  <block wx:for="{{vipDataItem}}" wx:key="un2" wx:for-item='vipItem'>
+    <!-- 全内容 -->
+    <view>
+      <!-- 分割线 -->
+      <view class="brLine"></view>
+
+      <!-- 头像加名称 -->
+      <view class="user">
+        <image src="{{vipItem.user.medium}}" style="height:60rpx;width:60rpx"></image>
+        <view class="userName">
+          {{vipItem.user.login}}
+        </view>
+        <view class="hot">
+          <image src="/images/icon/hot.jpg" style="height:60rpx;width:60rpx"></image>
+        </view>
+      </view>
+      <!-- 内容 -->
+      <view class="content">
+        {{vipItem.content}}
+      </view>
+
+      <view class="comment">👍  {{vipItem.votes.up}} 
+      <text decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      差评{{vipItem.votes.down}}
+      <text decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      评论 {{vipItem.comments_count}}
+      <text decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      转发   {{vipItem.share_count}}
+      </view>
+
+      <!-- 表情 -->
+      <view class="icon">
+        <view>
+          <image src="/images/icon/xiao.jpg" style="height:50rpx;width:50rpx"></image>
+        </view>
+        <view><image src="/images/icon/ku.jpg" style="height:50rpx;width:50rpx"></image>
+        </view>
+        <view> <image src="/images/icon/pinglun.jpg" style="height:50rpx;width:50rpx"></image>
+        </view>
+        <view> <image src="/images/icon/fenxiang.jpg" style="height:50rpx;width:50rpx"></image>
+        </view>
+      </view>
+    </view>
+  
+  </block>
+</block>

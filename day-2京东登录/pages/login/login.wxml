@@ -1,0 +1,28 @@
+<view>
+  <view class="account">
+    <view class="title">账号</view>
+    <view class="kuang"><input bindtap="accountInput" placeholder="用户名/邮箱/手机号"></input></view>
+  </view>
+
+  <view class="hr"></view>
+  
+  <view class="account">
+    <view class="title">密码</view>
+    <view class="kuang"><input bindblur="pwdBlur" placeholder="请输入密码" password="{{passwordType}}"></input>
+    </view>
+    <view><image bindtap="checkPassword" src="/images/1.jpg"></image></view>
+  </view>
+
+  <view class="hr"></view>
+  
+  <view class="btn">
+    <button size="default" disabled="{{disabled}}" type="{{type}}" style="width:100%">登录</button>
+  </view>
+ 
+
+  <view class="xiafangkuang">
+    <view class="phoneRegister"><navigator url="/pages/register/register">手机快速注册</navigator> </view>
+    <view class="bussinessRegister"><navigator url="/pages/bussiness/bussiness">企业用户注册</navigator> </view>
+    <view class="findPassword"><navigator url="/pages/findPassword/findPassword">找回密码</navigator> </view>
+  </view>
+</view>

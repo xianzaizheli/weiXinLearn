@@ -1,0 +1,4 @@
+<!--pages/navigatePage/navigatePage.wxml-->
+<view>
+  这可是你打wx.navigateTo()进来的，可以保留页面回调回去哦
+</view>

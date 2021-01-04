@@ -1,0 +1,82 @@
+/* pages/cook/cook.wxss */
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.nav-item{
+  margin-top: 20rpx;
+  width: 25%;
+  font-size: 20rpx;
+}
+
+.nav-item image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.hr{
+  opacity: 0.5;
+  height: 20rpx;
+  background-color: rgba(43, 183, 226, 0.111);
+}
+
+.head{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rpx;
+  opacity: 0.2;
+  height: 20rpx;
+  text-align: left;
+}
+
+.right{
+  position: absolute;
+  right: 20rpx;
+  text-decoration-color: blue;
+}
+
+/* 模板需要的样式 */
+.hang{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+
+.rightText{
+  display: flex;
+  flex-direction: column;
+}
+
+.textPlace{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+}
+
+.title{
+  font-weight: bold;
+  font-size: 30rpx;
+}
+
+.type{
+  font-weight: normal;
+  font-size: 23rpx;
+}
+
+.comment{
+  position: absolute;
+  right: 220rpx;
+  font-weight: normal;
+  font-size: 23rpx;
+}
+
+.accessNumber{
+  position: absolute;
+  right: 20rpx;
+  font-weight: normal;
+  font-size: 23rpx;
+}

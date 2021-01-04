@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/movie/movie",
+    "pages/movieDetail/cinemaDetail",
+    "pages/cinema/cinema",
+    "pages/me/me"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

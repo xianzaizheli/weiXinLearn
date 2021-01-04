@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/navigatePage/navigatePage",
+    "pages/redirectPage/redirectPage",
+    "pages/otherTabBar/otherTabBar"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#2ba008",
+    "navigationBarTitleText": "导航页面跳转",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页"
+    },
+    {
+      "pagePath": "pages/otherTabBar/otherTabBar",
+      "text": "跳转页面A"
+    }
+    ]
+  }
+}

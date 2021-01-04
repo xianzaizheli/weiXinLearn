@@ -1,0 +1,12 @@
+<!--pages/register/register.wxml-->
+
+<view>
+  <view>
+    <view>+86</view>
+    <view><input ></input></view>
+  </view>
+  <view>
+    <icon type="success" color="green"></icon>
+    
+  </view>
+</view>

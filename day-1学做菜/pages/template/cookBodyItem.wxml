@@ -1,0 +1,20 @@
+<template name="cookBodyItem">
+  <block wx:for="{{array}}" wx:for-item="itemName" wx:for-index="idx" wx:key="1">
+    <!-- 每一行的数据 -->
+    <view class="hang">
+      <!-- 左边图片 -->
+      <view bindtap="seeDetail" id="{{idx}}">
+        <image src="{{itemName.img}}" style="width:120rpx;height:120rpx;"></image>
+      </view>
+      <!-- 右边的文字说明 -->
+      <view class="rightText">
+        <view class="title">{{itemName.title}}</view>
+        <view class="textPlace">
+          <view class="type">{{itemName.type}}</view>
+          <view class="comment">{{itemName.comment}}</view>
+          <view class="accessNumber">{{itemName.accessNumber}}</view>
+        </view>
+      </view> 
+    </view>
+  </block>
+</template>

@@ -1,0 +1,11 @@
+<!--pages/stroage/storage.wxml-->
+<view>
+  <button type="primary" bindtap="uploadFile">上传文件</button>
+  <view class="brLine"></view>
+  <button type="primary" bindtap="showFilePop">文件弹窗</button>
+  <view>上面那个是直接弹出来结果，下载在默认的位置，相当于下载</view>
+  <button type="primary" bindtap="showFile">文件展示</button>
+  <image class="pic" src='{{picture}}'></image>
+  <view class="brLine"></view>
+  <button type="primary" bindtap="downloadFile">文件下载</button>
+</view>

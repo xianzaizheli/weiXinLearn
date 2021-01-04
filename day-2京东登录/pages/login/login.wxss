@@ -1,0 +1,58 @@
+/* pages/login/login.wxss */
+
+.account {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50rpx;
+  margin-bottom: 25rpx;
+}
+
+.title{
+  margin-left: 40rpx;
+  font-weight: 600;
+}
+
+.kuang{
+  margin-left: 30rpx;
+}
+
+.account image{
+  width: 70rpx;
+  height: 70rpx;
+  position: absolute;
+  right: 20rpx;
+}
+
+
+.hr{
+  margin: 0 auto;
+  opacity: 0.3;
+  border: #ddd 1rpx solid;
+  width: 90%
+}
+
+.btn{
+  margin: 30rpx;
+}
+
+
+.xiafangkuang {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+}
+
+.phoneRegister{
+  position: absolute;
+  left: 30rpx;
+}
+
+.bussinessRegister{
+  position: absolute;
+  left: 300rpx;
+}
+
+.findPassword{
+  position: absolute;
+  right: 30rpx;
+}

@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+  <view class="message">{{message}}</view>
+  <view id="item-{{id}}"></view>
+  <view wx:if="{{condition}}">内容</view>
+  <checkbox checked="{{false}}"></checkbox>  
+  <view hidden="{{flag?true:false}}">隐藏</view>
+  <view>{{a+b}} + {{b}} +3</view>
+  <view>{{hello + "1111" + xixixi}}</view>
+  <view>{{object.t}}</view>
+  <view>{{array[0]}}</view>
+  <view wx:for="{{[zero,1,2,3]}}">{{item}}</view>
+
+  <template is="objectCombine" data="{{for: a,bar: b}}"></template>
+  <template is="objectCombine" data="{{...obj1,...obj2,e:3}}"></template>
+</view>
+

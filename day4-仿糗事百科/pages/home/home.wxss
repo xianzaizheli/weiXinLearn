@@ -1,0 +1,113 @@
+.navTop{
+  display: flex;
+  flex-direction: row;
+  background-color: darkorange;
+}
+
+/* 如果要设置不全部都占用，那么就在原有基础上继续加东西 */
+.topTitle{
+  height: 110rpx;
+  width: 75%;  
+}
+
+.top{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+
+.selected{
+  width: 150rpx;
+  height: 80rpx;
+  text-align: center;
+  font-size: 35rpx;
+  font-weight: bold;
+  border-bottom: 6rpx solid white;
+}
+
+.normal{
+  width: 150rpx;
+  height: 80rpx;
+  text-align: center;
+  font-size: 35rpx;
+}
+
+.opr{
+  width: 150rpx;
+  height: 50rpx;
+  text-align: center;
+  font-size: 35rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  border-radius: 90%;
+  background-color: white;
+  color: darkorange;
+}
+
+.add{
+  width: 150rpx;
+  height: 80rpx;
+  text-align: center;
+  font-size: 35rpx;
+  margin-top: 20rpx;
+  font-weight: 800;
+}
+
+/* vip的内容 */
+.brLine{
+  background-color: papayawhip;
+  padding: 15rpx;
+}
+
+.user{
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx;
+}
+
+.userName{
+  width: 60%;
+  margin-left: 60rpx;
+}
+
+.hot{
+  width: 30%;
+  text-align: right;
+}
+
+.content{
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+  margin-bottom: 40rpx;
+}
+
+.comment{
+  font-size: 30rpx;
+  margin: 20rpx;
+  padding: 20rpx;
+  color: darkgreen
+}
+
+.icon{
+  display: flex;
+  flex-direction: row;
+}
+
+.icon view{
+  width: 25%;
+  text-align: center;
+}
+
+/* 子标签选择器 */
+.icon view:nth-child(4){
+  text-align: right;
+}
+
+/* video页面处理 */
+.play{
+  font-size: 30rpx;
+  margin: 20rpx;
+  color: darkgreen;
+  padding: 20rpx;
+}

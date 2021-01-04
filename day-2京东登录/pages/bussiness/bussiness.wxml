@@ -1,0 +1,32 @@
+<!--pages/bussiness/bussiness.wxml-->
+<form bindsubmit="formSub" bindreset="formRe">
+  <view>
+    <input name="username" placeholder="请设置4-20位用户名"></input>
+  </view>
+  <view>
+    <input name="password" placeholder="请设置6-20位登录密码"></input>
+    <switch></switch>
+  </view>
+  <view>
+    <input name="bussinessName" placeholder="请填写工商注册名称"></input>
+  </view>
+  <view>
+    <input placeholder="联系人姓名"></input>
+  </view>
+  <view>
+    <input placeholder="请输入手机号"></input>
+    <button type="{{typeM}}" style="width:90%">发送短信</button>
+  </view>
+  <view>
+    <input placeholder="短信验证码"></input>
+  </view>
+  <view>
+    <button type="primary" form-type="submit">注册</button>
+  </view>
+
+  <view>
+    <view>注册即为同意</view>
+    <view>《京东用户注册协议》</view>
+  </view>
+  
+</form>

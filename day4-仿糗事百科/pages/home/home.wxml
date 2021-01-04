@@ -1,0 +1,71 @@
+<!--pages/home/home.wxml-->
+<view>
+  <view class="navTop">
+    <scroll-view class="topTitle" scroll-x="true">
+      <view class="top">
+        <view>
+          <view id='0' class="{{currentPage==0? 'selected':'normal'}}" bindtap="changeTopic">VIP专享</view>
+          </view>
+        <view>
+          <view id='1' class="{{currentPage==1? 'selected':'normal'}}" bindtap="changeTopic">视频</view>
+          </view>
+        <view>
+          <view id='2' class="{{currentPage==2? 'selected':'normal'}}" bindtap="changeTopic">图片</view>
+        </view>
+        <view>
+          <view id='3' class="{{currentPage==3? 'selected':'normal'}}" bindtap="changeTopic">糗事</view>
+        </view>
+        <view>
+          <view id='4' class="{{currentPage==4? 'selected':'normal'}}" bindtap="changeTopic">精华</view>
+        </view>
+        <view>
+          <view id='5' class="{{currentPage==5? 'selected':'normal'}}" bindtap="changeTopic">穿越</view>
+        </view>
+        <view>
+          <view id='6' class="{{currentPage==6? 'selected':'normal'}}" bindtap="changeTopic">爆料</view>
+        </view>      
+      </view>
+    </scroll-view>
+
+    <view class="opr">
+      审核
+    </view>
+    <view class="add">
+      +
+    </view>
+  </view>
+  
+  <swiper style="height:{{pageHeight}}rpx" current="{{currentPage}}">
+    <swiper-item>
+      <include src="/pages/home/vip.wxml"/>
+    </swiper-item>
+
+    <swiper-item>
+      <view><include src='./video.wxml' />
+      </view>
+    </swiper-item>
+
+    <swiper-item>
+      <view>
+      <include src='image.wxml'/>
+      </view>
+    </swiper-item>
+
+    <swiper-item>
+      <view>糗事</view>
+    </swiper-item>
+
+    <swiper-item>
+      <view>精华</view>
+    </swiper-item>
+
+    <swiper-item>
+      <view>穿越</view>
+    </swiper-item>
+
+    <swiper-item>
+      <view>爆料</view>
+    </swiper-item>
+
+  </swiper>
+</view>

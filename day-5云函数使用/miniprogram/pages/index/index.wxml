@@ -1,0 +1,39 @@
+<view>
+  <button size="default" type="primary" bindtap="queryDataList">查找数据</button>
+  <button size="default" type="primary" bindtap="addDataList">增加数据</button>
+  <button size="default" type="primary" bindtap="updateDataList">修改数据</button>
+  <button size="default" type="primary" bindtap="deleteDataList">删除数据</button>
+
+  <view class="result">
+    <view class="resultList">查询数据结果</view>
+    <view class="resultListData">
+      <block wx:for='{{queryData}}' wx:for-item='qData'>
+        <view>id为{{qData._id}}</view>
+        <view>name为{{qData.name}}</view>
+        <view wx:if='{{qData}}'>性别为男</view>
+        <view wx:if='{{!qData}}'>性别为女</view>
+        <view>头像颜色为{{qData.iconStyle.color}}，头像大小为{{qData.iconStyle.size}}</view>
+        <view>登录地点：
+          <block wx:for='{{qData.loginLocal}}' wx:for-item='loginLocals'>
+            {{loginLocals}} 
+            <!-- 下面这个是用来加空格的 -->
+            <text decode='true'>&nbsp;</text>
+          </block>
+        </view>
+        <view>经纬度：{{qData.local.latitude}} , {{qData.local.longitude}}</view>
+      </block>
+    </view>
+  </view>
+  <view class="result">
+    <view class="resultList">增加数据结果</view>
+    <view class="resultListData">字段id为{{addData}}</view>
+  </view>
+  <view class="result">
+    <view class="resultList">修改数据结果</view>
+    <view class="resultListData">修改id为{{updateData}}</view>
+  </view>
+  <view class="result">
+    <view class="resultList">删除数据结果</view>
+    <view class="resultListData">{{deleteData}}</view>
+  </view>
+</view>

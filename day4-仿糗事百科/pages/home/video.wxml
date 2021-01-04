@@ -1,0 +1,52 @@
+<block wx:for="{{videoData}}" wx:key="un1" wx:for-item="videoDataItem">
+  <block wx:for="{{videoDataItem}}" wx:key="un2" wx:for-item='videoData'>
+    <!-- 全内容 -->
+    <view>
+      <!-- 分割线 -->
+      <view class="brLine"></view>
+
+      <!-- 头像加名称 -->
+      <view class="user">
+        <image src="{{videoData.user.medium}}" style="height:60rpx;width:60rpx"></image>
+        <view class="userName">
+          {{videoData.user.login}}
+        </view>
+        <view class="hot">
+          <image src="/images/icon/hot.jpg" style="height:60rpx;width:60rpx"></image>
+        </view>
+      </view>
+      <!-- 内容 -->
+      <view class="content">
+        {{videoData.content}}
+      </view>
+
+      <view>
+        <video src="{{videoData.high_url}}"></video>
+      </view>
+
+      <view class="comment">👍  {{videoData.votes.up}} 
+      <text decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      差评{{videoData.votes.down}}
+      <text decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      评论 {{videoData.comments_count}}
+      <text decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      转发   {{videoData.share_count}}
+      </view>
+      <view class="play">播放量 {{videoData.loop}}</view>
+
+      <!-- 表情 -->
+      <view class="icon">
+        <view>
+          <image src="/images/icon/xiao.jpg" style="height:50rpx;width:50rpx"></image>
+        </view>
+        <view><image src="/images/icon/ku.jpg" style="height:50rpx;width:50rpx"></image>
+        </view>
+        <view> <image src="/images/icon/pinglun.jpg" style="height:50rpx;width:50rpx"></image>
+        </view>
+        <view> <image src="/images/icon/fenxiang.jpg" style="height:50rpx;width:50rpx"></image>
+        </view>
+      </view>
+    </view>
+  
+  </block>
+</block>
