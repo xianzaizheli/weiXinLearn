@@ -12,5 +12,20 @@
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "style": "v2",
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/cloud/cloud",
+      "text": "云函数"
+    },
+    {
+      "pagePath": "pages/stroage/storage",
+      "text": "存储"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "text": "数据库"
+    }
+  ]
+  }
 }
